@@ -1,63 +1,57 @@
-<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aframe-animation-component@5.1.2/dist/aframe-animation-component.min.js"></script>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-animation-component@5.1.2/dist/aframe-animation-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene vr-mode-ui="enabled: false">
+      <a-assets>
+        <!-- <img id="1" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-10b57f60-e2dd-11e8-b523-1f57a79ad7a5.png">
+        <img id="2" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-1a5a5ea0-e2dd-11e8-b1b9-a9ddd743f9eb.png">
+        <img id="3" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-088f77f0-e2dd-11e8-adcf-4b96ba428323.png">
+        <img id="4" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-4cba05b0-e2f3-11e8-a15e-099b2ac506a9.jpg">
+        <img id="5" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-ec7da5a0-e2dc-11e8-a1c3-e5a60530d59d.jpg">
+        <img id="6" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-fd7d7420-e2dc-11e8-9c86-ade560189fa1.png">
+        <img id="7" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-a01e7b90-e2f4-11e8-b0f2-bfe0f33e109b.jpg">
+        <img id="8" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-1afba7b0-e2dd-11e8-a1c3-e5a60530d59d.png">
+        <img id="9" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-ee648e10-e2dc-11e8-b578-77b272b8e2aa.jpg">
+        <img id="10" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-bfe6bba0-e2f3-11e8-964a-e187c661d4c5.jpg">
+        <img id="11" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-956b2f00-e2f3-11e8-8969-4dfb9943580c.jpg">
+        <img id="12" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-14d37d10-e493-11e8-b39f-0fac3a0a8326.jpg"> -->
+        <img id="1" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-1.jpg">
+        <img id="2" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-2.jpg">
+        <img id="3" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-3.jpg">
+        <img id="4" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-4.jpg">
+        <img id="5" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-5.jpg">
+        <img id="6" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-6.jpg">
+        <img id="7" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-7.jpg">ç
+        <img id="8" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-8.jpg">
+        <img id="9" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-9.jpg">
+        <img id="10" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-10.jpg">
+        <img id="11" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-11.jpg">
+        <img id="12" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-12.jpg">
+    
+    
+      </a-assets>
+    
+      <a-entity id="main-camera-wrapper" position="0 0 -1" rotation="0 180 0" animation="property: rotation; to: 0 450 0; dur: 9000; easing: easeInOutQuart; elasticity: 400; delay: 10000; dir: normal; loop: ; " animation__1="property: position; to: 0 0 4; dur: 4000; easing: easeInOutQuint; elasticity: 400; delay: 8000; dir: normal; loop: 0; ">
+        <a-camera id="main-camera" visible="true" wasd-controls="acceleration: 750; easing: 10; enabled: true; fly: false;" position="0 1.6 0" cursor="rayOrigin: mouse;" raycaster="objects: .clickable; interval: 1;"></a-camera>
+      </a-entity>
+      <a-image id="image-1" position="0 1.66 1" rotation="0 0 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 1; shader: flat; side: double; src: #8;" visible="true" class="clickable"></a-image>
+      <a-image id="image-2" position="-2 4.7 0" rotation="0 0 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 1; shader: flat; side: double; src: #2;" visible="true"></a-image>
+      <a-image id="image-3" position="3 1.51 8" rotation="0 0 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 1; shader: flat; side: double; src: #5;" visible="true"></a-image>
+      <a-image id="image-4" position="-3 1.51 8" rotation="0 0 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 1; shader: flat; side: double; src: #9;" visible="true"></a-image>
+      <a-image id="image-5" position="0.00 1.66 7" rotation="0 0 0" scale="1 1.1 1" geometry="width: 4; height: 3;" material="opacity: 1; shader: flat; side: double; src: #4;" visible="true"></a-image>
+      <a-image id="image-6" position="5.00 2.71 4.00" rotation="0 90 0" scale="1 1 1" geometry="width: 4; height: 3;" material="color: #0000ff; opacity: 1; shader: flat; side: double; src: #10;" visible="true"></a-image>
+      <a-image id="image-7" position="4 2.4 4" rotation="0 90 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 0.5; shader: flat; side: double; src: #11;" visible="true"></a-image>
+      <a-image id="image-8" position="-4 1.6 4" rotation="0 90 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 1; shader: flat; side: double; src: #7;" visible="true"></a-image>
+      <a-image id="image-9" position="0 1.6 0" rotation="0 0 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 1; shader: flat; side: double; src: #3;" visible="true" animation="property: rotation; to: 0 360 0; dur: 2500; easing: easeInOutSine; elasticity: 400; delay: 0; dir: normal; loop: true; "></a-image>
+      <a-image id="image-10" position="2.2 4.25 -1" rotation="0 0 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 1; shader: standard; side: double; src: #1;" visible="true"></a-image>
+      <a-image id="image-11" position="0.00 1.66 1" rotation="0 0 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 0; shader: standard; side: one; src: #12;" visible="true" animation="startEvents: image-1-clicked; property: material.opacity; to: 1; dur: 1000; easing: easeOutExpo; elasticity: 400; delay: 0; dir: normal; loop: 0; "></a-image>
+      <a-sphere id="sphere" position="0.00 1.60 0" rotation="0 0 0" scale="1 1 1" geometry="radius: 0;" material="opacity: 1; shader: flat; side: double; src: #6;" visible="true" animation="property: rotation; to: 0 -360 0; dur: 2000; easing: linear; elasticity: 400; delay: 0; dir: normal; loop: true; "></a-sphere>
+      <a-light id="point-light" light="castShadow: false; color: #ffffff; distance: 0; intensity: 1; type: point;" position="0 7 5" visible="true"></a-light>
+    </a-scene>
+  </body>
+</html>
 
-<a-scene vr-mode-ui="enabled: false">
-  <a-assets>
-    <!-- <img id="1" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-10b57f60-e2dd-11e8-b523-1f57a79ad7a5.png">
-    <img id="2" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-1a5a5ea0-e2dd-11e8-b1b9-a9ddd743f9eb.png">
-    <img id="3" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-088f77f0-e2dd-11e8-adcf-4b96ba428323.png">
-    <img id="4" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-4cba05b0-e2f3-11e8-a15e-099b2ac506a9.jpg">
-    <img id="5" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-ec7da5a0-e2dc-11e8-a1c3-e5a60530d59d.jpg">
-    <img id="6" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-fd7d7420-e2dc-11e8-9c86-ade560189fa1.png">
-    <img id="7" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-a01e7b90-e2f4-11e8-b0f2-bfe0f33e109b.jpg">
-    <img id="8" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-1afba7b0-e2dd-11e8-a1c3-e5a60530d59d.png">
-    <img id="9" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-ee648e10-e2dc-11e8-b578-77b272b8e2aa.jpg">
-    <img id="10" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-bfe6bba0-e2f3-11e8-964a-e187c661d4c5.jpg">
-    <img id="11" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-956b2f00-e2f3-11e8-8969-4dfb9943580c.jpg">
-    <img id="12" src="https://d3n32ilufxuvd1.cloudfront.net/59c62a11c59b3a006da628bb/1214435/upload-14d37d10-e493-11e8-b39f-0fac3a0a8326.jpg"> -->
-    <img id="1" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-1.jpg">
-    <img id="2" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-2.jpg">
-    <img id="3" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-3.jpg">
-    <img id="4" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-4.jpg">
-    <img id="5" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-5.jpg">
-    <img id="6" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-6.jpg">
-    <img id="7" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-7.jpg">ç
-    <img id="8" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-8.jpg">
-    <img id="9" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-9.jpg">
-    <img id="10" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-10.jpg">
-    <img id="11" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-11.jpg">
-    <img id="12" src="./Fotos/MUTEK-2020/MUTEK21_Vigliensoni_par_Myriam-Menard-12.jpg">
 
-
-  </a-assets>
-
-  <a-entity id="main-camera-wrapper" position="0 0 -1" rotation="0 180 0" animation="property: rotation; to: 0 450 0; dur: 9000; easing: easeInOutQuart; elasticity: 400; delay: 10000; dir: normal; loop: ; " animation__1="property: position; to: 0 0 4; dur: 4000; easing: easeInOutQuint; elasticity: 400; delay: 8000; dir: normal; loop: 0; ">
-    <a-camera id="main-camera" visible="true" wasd-controls="acceleration: 750; easing: 10; enabled: true; fly: false;" position="0 1.6 0" cursor="rayOrigin: mouse;" raycaster="objects: .clickable; interval: 1;"></a-camera>
-  </a-entity>
-
-  <a-image id="image-1" position="0 1.66 1" rotation="0 0 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 1; shader: flat; side: double; src: #8;" visible="true" class="clickable"></a-image>
-
-  <a-image id="image-2" position="-2 4.7 0" rotation="0 0 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 1; shader: flat; side: double; src: #2;" visible="true"></a-image>
-
-  <a-image id="image-3" position="3 1.51 8" rotation="0 0 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 1; shader: flat; side: double; src: #5;" visible="true"></a-image>
-
-  <a-image id="image-4" position="-3 1.51 8" rotation="0 0 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 1; shader: flat; side: double; src: #9;" visible="true"></a-image>
-
-  <a-image id="image-5" position="0.00 1.66 7" rotation="0 0 0" scale="1 1.1 1" geometry="width: 4; height: 3;" material="opacity: 1; shader: flat; side: double; src: #4;" visible="true"></a-image>
-
-  <a-image id="image-6" position="5.00 2.71 4.00" rotation="0 90 0" scale="1 1 1" geometry="width: 4; height: 3;" material="color: #0000ff; opacity: 1; shader: flat; side: double; src: #10;" visible="true"></a-image>
-
-  <a-image id="image-7" position="4 2.4 4" rotation="0 90 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 0.5; shader: flat; side: double; src: #11;" visible="true"></a-image>
-
-  <a-image id="image-8" position="-4 1.6 4" rotation="0 90 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 1; shader: flat; side: double; src: #7;" visible="true"></a-image>
-
-  <a-image id="image-9" position="0 1.6 0" rotation="0 0 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 1; shader: flat; side: double; src: #3;" visible="true" animation="property: rotation; to: 0 360 0; dur: 2500; easing: easeInOutSine; elasticity: 400; delay: 0; dir: normal; loop: true; "></a-image>
-
-  <a-image id="image-10" position="2.2 4.25 -1" rotation="0 0 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 1; shader: standard; side: double; src: #1;" visible="true"></a-image>
-
-  <a-image id="image-11" position="0.00 1.66 1" rotation="0 0 0" scale="1 1 1" geometry="width: 4; height: 3;" material="opacity: 0; shader: standard; side: one; src: #12;" visible="true" animation="startEvents: image-1-clicked; property: material.opacity; to: 1; dur: 1000; easing: easeOutExpo; elasticity: 400; delay: 0; dir: normal; loop: 0; "></a-image>
-
-  <a-sphere id="sphere" position="0.00 1.60 0" rotation="0 0 0" scale="1 1 1" geometry="radius: 0;" material="opacity: 1; shader: flat; side: double; src: #6;" visible="true" animation="property: rotation; to: 0 -360 0; dur: 2000; easing: linear; elasticity: 400; delay: 0; dir: normal; loop: true; "></a-sphere>
-
-  <a-light id="point-light" light="castShadow: false; color: #ffffff; distance: 0; intensity: 1; type: point;" position="0 7 5" visible="true"></a-light>
-</a-scene>
